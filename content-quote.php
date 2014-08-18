@@ -43,7 +43,7 @@
 			comments_popup_link( '<i class="fa fa-comments-o"></i> 0', '<i class="fa fa-comments-o"></i> 1', '<i class="fa fa-comments-o"></i> %', 'post-comments' );
 		}
 		
-		edit_post_link(); 
+		edit_post_link('<i class="fa fa-pencil-square-o"></i>'); 
 	
 	?>
 

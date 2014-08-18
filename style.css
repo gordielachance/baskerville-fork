@@ -701,13 +701,7 @@ body a {
 .posts .post-meta a.post-edit-link { 
 	height: 59px;
 	width: 20px;
-	text-indent: -9999px;
-	background-image: url(images/icons/1x/edit-g.png);
-	background-size: 20px auto;
-	background-position: center;
 }
-
-.posts .post-meta a.post-edit-link:hover { background-image: url(images/icons/1x/edit-c.png); }
 
 
 /*  Post formats  ----------------------------------------- */
@@ -1169,8 +1163,7 @@ a.post-nav-prev { background-image: url(images/icons/1x/prev-g.png); }
 a.post-nav-prev:hover { background-image: url(images/icons/1x/prev-c.png); }
 a.post-nav-next { background-image: url(images/icons/1x/next-g.png); }
 a.post-nav-next:hover { background-image: url(images/icons/1x/next-c.png); }
-.single-post a.post-edit-link { background-image: url(images/icons/1x/edit-g.png); background-position: left 5px; }
-.single-post a.post-edit-link:hover { background-image: url(images/icons/1x/edit-c.png); }
+
 
 /* post-author */
 
@@ -1865,8 +1858,6 @@ img.alignright,
 
 .comment-actions a + a { margin-left: -8px; }
 
-.comment-actions .comment-reply-link { background-image: url(images/icons/1x/reply-w.png) }
-.comment-actions .comment-edit-link { background-image: url(images/icons/1x/edit-w.png) }
 
 .comment-actions a:hover { background-color: #13C4A5; color: #fff; z-index: 10; }
 
@@ -2613,10 +2604,7 @@ img#wpstats { display: none; } /* Silly WordPress stats */
 	.author-links a.author-link-twitter { background-image: url(images/icons/2x/social/twitter-w.png); }
 	
 	.comment.bypostauthor:after { background-image: url(images/icons/2x/author-w.png); }
-	
-	.comment-actions .comment-reply-link { background-image: url(images/icons/2x/reply-w.png); }
-	.comment-actions .comment-edit-link { background-image: url(images/icons/2x/edit-w.png); }
-	
+
 	input#author { background-image: url(images/icons/2x/author-g.png); }
 	input#email { background-image: url(images/icons/2x/social/mail-g.png); }
 	input#url { background-image: url(images/icons/2x/home-g.png); }
