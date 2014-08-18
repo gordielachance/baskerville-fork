@@ -10,7 +10,7 @@ jQuery(document).ready(function($) {
 		});
 
 		// Fade blocks in after images are ready (prevents jumping and re-rendering)
-		$(msnryItemSelector).fadeIn();
+		$(msnryItemSelector).fadeTo(400, 1);
 	});
 	
 	$(document).ready( function() { setTimeout( function() { $(msnryContainerSelector).masonry(); }, 500); });
