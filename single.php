@@ -186,15 +186,15 @@
 								
 								<div class="author-links">
 									
-									<a class="author-link-posts" title="<?php _e('Author archive','baskerville'); ?>" href="<?php echo get_author_posts_url(get_the_author_meta( 'ID' )); ?>"><?php _e('Author archive','baskerville'); ?></a>
+                                                                    <a class="author-link-posts" title="<?php _e('Author archive','baskerville'); ?>" href="<?php echo get_author_posts_url(get_the_author_meta( 'ID' )); ?>"><i class="fa fa-archive round-icon"></i> <span class="round-icon-text"><?php _e('Author archive','baskerville'); ?></span></a>
 									
 									<?php $author_url = get_the_author_meta('user_url'); 
 								
-									$author_url = preg_replace('#^https?://#', '', rtrim($author_url,'/'));
+									$author_url = preg_replace('#^https?:#', '', rtrim($author_url,'/'));
 																	
-									if (!empty($author_url)) : ?>
+									if ( !empty($author_url) ) : ?>
 									
-										<a class="author-link-website" title="<?php _e('Author website','baskerville'); ?>" href="<?php the_author_meta('user_url'); ?>"><?php _e('Author website','baskerville'); ?></a>
+										<a class="author-link-website" title="<?php _e('Author website','baskerville'); ?>" href="<?php the_author_meta('user_url'); ?>"><i class="fa fa-home round-icon"></i> <span class="round-icon-text"><?php _e('Author website','baskerville'); ?></span></a>
 										
 									<?php endif;
 									
@@ -204,15 +204,15 @@
 																	
 									if ( !empty($author_mail) && ($show_mail == "yes") ) : ?>
 									
-										<a class="author-link-mail" title="<?php echo $author_mail; ?>" href="mailto:<?php echo $author_mail ?>"><?php echo $author_mail; ?></a>
+										<a class="author-link-mail" title="<?php echo $author_mail; ?>" href="mailto:<?php echo $author_mail ?>"><i class="fa fa-envelope round-icon"></i> <span class="round-icon-text"><?php echo $author_mail; ?></span></a>
 										
 									<?php endif;
 									
 									$author_twitter = get_the_author_meta('twitter'); 
 																	
-									if (!empty($author_twitter)) : ?>
+									if ( !empty($author_twitter) ) : ?>
 									
-										<a class="author-link-twitter" title="<?php echo '@' . $author_twitter . ' '; ?><?php _e('on Twitter','baskerville'); ?>" href="http://www.twitter.com/<?php echo $author_twitter ?>"><?php echo '@' . $author_twitter . ' '; ?><?php _e('on Twitter','baskerville'); ?></a>
+										<a class="author-link-twitter" title="<?php echo '@' . $author_twitter . ' '; ?><?php _e('on Twitter','baskerville'); ?>" href="http:www.twitter.com/<?php echo $author_twitter ?>"><i class="fa fa-twitter round-icon"></i> <span class="round-icon-text"><?php echo '@' . $author_twitter . ' '; ?><?php _e('on Twitter','baskerville'); ?></span></a>
 										
 									<?php endif; ?>
 									

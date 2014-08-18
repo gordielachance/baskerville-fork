@@ -395,9 +395,9 @@ function baskerville_comment( $comment, $args, $depth ) {
 					
 					<div class="comment-actions">
 					
-						<?php edit_comment_link( __( 'Edit', 'baskerville' ), '', '' ); ?>
+						<?php edit_comment_link( '<i class="fa fa-pencil-square-o round-icon"></i> <span class="round-icon-text">'.__( 'Edit', 'baskerville' ).'</span>', '', '' ); ?>
 						
-						<?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Reply', 'baskerville' ), 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+						<?php comment_reply_link( array_merge( $args, array( 'reply_text' => '<i class="fa fa-reply round-icon"></i> <span class="round-icon-text">'.__( 'Reply', 'baskerville' ).'</span>', 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
 						
 						<div class="clear"></div>
 					
@@ -419,9 +419,9 @@ function baskerville_comment( $comment, $args, $depth ) {
 				
 				<div class="comment-actions-below hidden">
 					
-					<?php edit_comment_link( __( 'Edit', 'baskerville' ), '', '' ); ?>
+					<?php edit_comment_link( '<i class="fa fa-pencil-square-o round-icon"></i> <span class="round-icon-text">'.__( 'Edit', 'baskerville' ).'</span>', '', '' ); ?>
 					
-					<?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Reply', 'baskerville' ), 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+					<?php comment_reply_link( array_merge( $args, array( 'reply_text' => '<i class="fa fa-reply round-icon"></i> <span class="round-icon-text">'.__( 'Reply', 'baskerville' ).'</span>', 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
 					
 					<div class="clear"></div>
 				

@@ -1249,30 +1249,32 @@ body.single-post .content.center {
 
 .author-links { margin-top: 18px; }
 
-.author-links a {
+.author-links a{
+    line-height: 36px;
+    display: block;
+    margin-bottom:10px;
+}
+
+.round-icon {
 	display: inline-block;
 	width: 36px;
 	height: 36px;
-	background-color: rgba(255,255,255,0.1);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 16px auto;
+	background-color: #3F4854;
 	margin-left: 5px;
 	border-radius: 999px;
 	-moz-border-radius: 999px;
 	-webkit-border-radius: 999px;
-	text-indent: -9999px;
+        text-align: center;
+        color: white;
+        line-height: 36px;
+}
+
+a:hover .round-icon{
+    color: white;
+    background-color:#13C4A5;
 }
 
 .author-links a:first-child { margin-left: 0; }
-
-.author-links a.author-link-posts { background-image: url(images/icons/1x/archive-w.png); }
-.author-links a.author-link-website { background-image: url(images/icons/1x/home-w.png); }
-.author-links a.author-link-mail { background-image: url(images/icons/1x/social/mail-w.png); }
-.author-links a.author-link-twitter { background-image: url(images/icons/1x/social/twitter-w.png); }
-
-.author-links a:hover { background-color: #13C4A5; }
-
 
 /* -------------------------------------------------------------------------------- */
 /*	7. Post content
@@ -1752,12 +1754,12 @@ img.alignright,
 .comment.bypostauthor { position: relative; }
 
 .comment.bypostauthor:after {
-	content: "";
+	content: "\f007";
+        font-family: FontAwesome;
 	display: block;
 	width: 32px;
 	height: 32px;
-	background: #13C4A5 url(images/icons/1x/author-w.png) no-repeat center 8px;
-	background-size: 14px auto;
+	background: #13C4A5;
 	border-radius: 999px;
 	-moz-border-radius: 999px;
 	-webkit-border-radius: 999px;
@@ -1766,6 +1768,9 @@ img.alignright,
 	left: 0;
 	margin-top: -8px;
 	margin-left: -8px;
+        text-align: center;
+        line-height: 32px;
+        color: white;
 }
 
 .comment-header { margin-bottom: 25px; }
@@ -1875,24 +1880,18 @@ img.alignright,
 	right: 20px;
 }
 
-.comment-actions a {
-	display: block;
-	position: relative;
-	float: left;
-	width: 32px;
-	height: 32px;
-	background: #2B3542 no-repeat center;
-	background-size: 16px auto;
-	border-radius: 999px;
-	-moz-border-radius: 999px;
-	-webkit-border-radius: 999px;
-	text-indent: -9999px;
+.comment-actions a:hover {
+	background-color:none;
+        color: #fff;
+        z-index: 10;
 }
 
+.comment-actions a .round-icon-text{
+    display:none;
+}
+
+
 .comment-actions a + a { margin-left: -8px; }
-
-
-.comment-actions a:hover { background-color: #13C4A5; color: #fff; z-index: 10; }
 
 /* comment navigation */
 
@@ -2625,13 +2624,6 @@ img#wpstats { display: none; } /* Silly WordPress stats */
 	.single-post .format-gallery .flex-direction-nav .flex-prev { background-image: url(images/icons/2x/chevron-left-w-shade.png); }
 	.format-gallery .flex-direction-nav .flex-next,
 	.single-post .format-gallery .flex-direction-nav .flex-next { background-image: url(images/icons/2x/chevron-right-w-shade.png); }
-
-	.author-links a.author-link-posts { background-image: url(images/icons/2x/archive-w.png); }
-	.author-links a.author-link-website { background-image: url(images/icons/2x/home-w.png); }
-	.author-links a.author-link-mail { background-image: url(images/icons/2x/social/mail-w.png); }
-	.author-links a.author-link-twitter { background-image: url(images/icons/2x/social/twitter-w.png); }
-	
-	.comment.bypostauthor:after { background-image: url(images/icons/2x/author-w.png); }
 
 	input#author { background-image: url(images/icons/2x/author-g.png); }
 	input#email { background-image: url(images/icons/2x/social/mail-g.png); }
