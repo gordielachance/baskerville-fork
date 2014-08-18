@@ -35,8 +35,10 @@ jQuery(document).ready(function($) {
 	// Toggle search form
 	$(".search-toggle").on("click", function(){	
 		$(this).toggleClass("active");
-		$(".header-search-block").slideToggle();
-		$(".header-search-block #s").focus();		 
+		$(".header-search-block").slideToggle( 400, function() {
+                    var input = $(this).find('input[type="search"]');
+                    input.focus();
+                });	 
 		return false;
 	});
 	
