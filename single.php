@@ -157,9 +157,19 @@
 					</div> <!-- /post-content -->
 					            					
 					<div class="post-meta-container">
+                                            
+                                            <div class="ribbon post-author-ribbon">
+                                                <div class="ribbon-container">
+                                                        <div class="ribbon-base">
+                                                            <i class="fa fa-user"></i>
+                                                        </div>
+                                                        <div class="ribbon-corner ribbon-corner-left"></div>
+                                                        <div class="ribbon-corner ribbon-corner-right"></div>
+                                                </div>
+                                            </div>
 						
 						<div class="post-author">
-						
+
 							<div class="post-author-content">
 							
 								<h4><?php the_author_meta('display_name'); ?></h4>
