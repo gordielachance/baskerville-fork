@@ -1565,6 +1565,7 @@ img.alignright,
 
 .post-content input[type="text"],
 .post-content input[type="tel"],
+.post-content input[type="email"],
 .post-content input[type="url"],
 .post-content input[type="password"],
 .post-content textarea {
