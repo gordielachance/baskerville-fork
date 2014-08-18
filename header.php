@@ -95,7 +95,7 @@
 											
 				 </ul> <!-- /main-menu -->
 				 
-				 <a class="search-toggle fright" href="#"></a>
+				 <a class="search-toggle fright" href="#"><i class="fa fa-search"></i></a>
 				 
 				 <div class="clear"></div>
 				 
