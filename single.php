@@ -218,11 +218,11 @@
 							
 							<?php if( function_exists('zilla_likes') ) zilla_likes(); ?>
 							
-							<p class="post-categories"><?php the_category(', '); ?></p>
+							<p class="post-categories"><i class="fa fa-folder-open"></i> <?php the_category(', '); ?></p>
 							
 							<?php if (has_tag()) : ?>
 							
-								<p class="post-tags"><?php the_tags('', ', '); ?></p>
+								<p class="post-tags"><i class="fa fa-tag"></i> <?php the_tags('', ', '); ?></p>
 							
 							<?php endif; ?>
 							
