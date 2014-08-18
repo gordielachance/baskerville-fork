@@ -84,6 +84,8 @@ function baskerville_load_style() {
 	    wp_enqueue_style( 'baskerville_googleFonts' );
             wp_enqueue_style( 'fontAwesome');
             
+            //unregister zilla-likes styles, it's messing up our styles !
+            wp_deregister_style( 'zilla-likes' );
 	}
 }
 
