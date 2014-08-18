@@ -33,13 +33,13 @@
 	
 		<?php if ( have_posts() ) : ?>
 	
-			<div class="posts">
+			<div class="posts js-masonry">
 			
 				<?php rewind_posts(); ?>
 			
 				<?php while ( have_posts() ) : the_post(); ?>
 				
-					<div class="post-container">
+					<div class="post-container js-masonry-item">
 				
 						<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				

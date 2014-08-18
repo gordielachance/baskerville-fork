@@ -1,21 +1,22 @@
 jQuery(document).ready(function($) {
 
 	//Masonry blocks
-	$blocks = $(".posts");
+        var msnryContainerSelector = ".js-masonry";
+	var msnryItemSelector = ".js-masonry-item";
 
-	$blocks.imagesLoaded(function(){
-		$blocks.masonry({
-			itemSelector: '.post-container'
+	$(msnryContainerSelector).imagesLoaded(function(){
+		$(msnryContainerSelector).masonry({
+			itemSelector: msnryItemSelector
 		});
 
 		// Fade blocks in after images are ready (prevents jumping and re-rendering)
-		$(".post-container").fadeIn();
+		$(msnryItemSelector).fadeIn();
 	});
 	
-	$(document).ready( function() { setTimeout( function() { $blocks.masonry(); }, 500); });
+	$(document).ready( function() { setTimeout( function() { $(msnryContainerSelector).masonry(); }, 500); });
 
 	$(window).resize(function () {
-		$blocks.masonry();
+		$(msnryContainerSelector).masonry();
 	});
 
 
