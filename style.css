@@ -697,8 +697,6 @@ body a {
 .posts .post-meta a.zilla-likes { background-image: url(images/icons/1x/heart-g.png); }
 .posts .post-meta a.zilla-likes:hover,
 .posts .post-meta a.zilla-likes.active { background-image: url(images/icons/1x/heart-c.png); color: #13C4A5; }
-.posts .post-meta a.post-comments { background-image: url(images/icons/1x/comment-g.png); }
-.posts .post-meta a.post-comments:hover { background-image: url(images/icons/1x/comment-c.png); }
 
 .posts .post-meta a.post-edit-link { 
 	height: 59px;
@@ -2587,8 +2585,6 @@ img#wpstats { display: none; } /* Silly WordPress stats */
 	.posts .post-meta a.zilla-likes { background-image: url(images/icons/2x/heart-g.png); }
 	.posts .post-meta a.zilla-likes:hover,
 	.posts .post-meta a.zilla-likes.active { background-image: url(images/icons/2x/heart-c.png); }
-	.posts .post-meta a.post-comments { background-image: url(images/icons/2x/comment-g.png); }
-	.posts .post-meta a.post-comments:hover { background-image: url(images/icons/2x/comment-c.png); }
 	
 	.featured-media .mejs-playpause-button.mejs-play button,
 	.single-post .featured-media .mejs-playpause-button.mejs-play button { background-image: url(images/icons/2x/audio/play.png); }

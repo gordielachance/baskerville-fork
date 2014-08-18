@@ -31,7 +31,7 @@
 		if( function_exists('zilla_likes') ) zilla_likes(); 
 	
 		if ( comments_open() ) {
-			comments_popup_link( '0', '1', '%', 'post-comments' );
+			comments_popup_link( '<i class="fa fa-comments-o"></i> 0', '<i class="fa fa-comments-o"></i> 1', '<i class="fa fa-comments-o"></i> %', 'post-comments' );
 		}
 		
 		edit_post_link(); 
