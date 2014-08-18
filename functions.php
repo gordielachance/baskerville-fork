@@ -70,11 +70,20 @@ add_action( 'wp_enqueue_scripts', 'baskerville_load_javascript_files' );
 // Enqueue styles
 function baskerville_load_style() {
 	if ( !is_admin() ) {
+            
+            //baskerville
+            wp_register_style('baskerville_style', get_stylesheet_uri() );
+            
+            //google fonts
 	    wp_register_style('baskerville_googleFonts',  '//fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,400italic,700,700italic,300|Pacifico:400' );
-		wp_register_style('baskerville_style', get_stylesheet_uri() );
-		
+
+            //font awesome
+            wp_register_style('fontAwesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
+
+            wp_enqueue_style( 'baskerville_style' );
 	    wp_enqueue_style( 'baskerville_googleFonts' );
-	    wp_enqueue_style( 'baskerville_style' );
+            wp_enqueue_style( 'fontAwesome');
+            
 	}
 }
 
