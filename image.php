@@ -41,7 +41,7 @@
 						
 						<div class="post-meta">
 						
-							<p class="post-date"><?php the_time( get_option( 'date_format' ) ); ?></p>
+							<p class="post-date"><i class="fa fa-clock-o"></i> <?php the_time( get_option( 'date_format' ) ); ?></p>
 							<p class="image-resolution"><?php echo $imageArray[1] // 1 is the width ?> <span style="text-transform:lowercase;">x</span> <?php echo $imageArray[2] . ' px'; // 2 is the height ?></p>
 						
 						</div> <!-- /post-meta -->

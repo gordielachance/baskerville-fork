@@ -24,7 +24,7 @@
 									                                    	    
 <div class="post-meta">
 
-	<a class="post-date" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_time( 'Y/m/d' ); ?></a>
+	<a class="post-date" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><i class="fa fa-clock-o"></i> <?php the_time( 'Y/m/d' ); ?></a>
 	
 	<?php
 	

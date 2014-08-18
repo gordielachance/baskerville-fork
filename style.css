@@ -694,8 +694,6 @@ body a {
 
 .posts .post-meta a:hover { color: #13C4A5; }
 
-.posts .post-meta a.post-date { background-image: url(images/icons/1x/clock-g.png); }
-.posts .post-meta a.post-date:hover { background-image: url(images/icons/1x/clock-c.png); }
 .posts .post-meta a.zilla-likes { background-image: url(images/icons/1x/heart-g.png); }
 .posts .post-meta a.zilla-likes:hover,
 .posts .post-meta a.zilla-likes.active { background-image: url(images/icons/1x/heart-c.png); color: #13C4A5; }
@@ -1149,7 +1147,6 @@ body.single-post .content.center {
 
 .single-post .post-meta p:first-child { margin-top: 0; }
 
-.single-post .post-meta p.post-date { background-image: url(images/icons/1x/clock-g.png); }
 .single-post .post-meta a.zilla-likes { background-image: url(images/icons/1x/heart-g.png); }
 .single-post .post-meta a.zilla-likes:hover { background-image: url(images/icons/1x/heart-c.png); }
 .single-post .post-meta p.post-categories { background-image: url(images/icons/1x/folder-g.png); }
@@ -2587,8 +2584,6 @@ img#wpstats { display: none; } /* Silly WordPress stats */
 
 	.post .sticky-post { background-image: url(images/icons/2x/tack-w.png); }
 	
-	.posts .post-meta a.post-date { background-image: url(images/icons/2x/clock-g.png); }
-	.posts .post-meta a.post-date:hover { background-image: url(images/icons/2x/clock-c.png); }
 	.posts .post-meta a.zilla-likes { background-image: url(images/icons/2x/heart-g.png); }
 	.posts .post-meta a.zilla-likes:hover,
 	.posts .post-meta a.zilla-likes.active { background-image: url(images/icons/2x/heart-c.png); }
@@ -2611,7 +2606,6 @@ img#wpstats { display: none; } /* Silly WordPress stats */
 	.format-gallery .flex-direction-nav .flex-next,
 	.single-post .format-gallery .flex-direction-nav .flex-next { background-image: url(images/icons/2x/chevron-right-w-shade.png); }
 	
-	.single-post .post-meta p.post-date { background-image: url(images/icons/2x/clock-g.png); }
 	.single-post .post-meta a.zilla-likes { background-image: url(images/icons/2x/heart-g.png); }
 	.single-post .post-meta a.zilla-likes:hover { background-image: url(images/icons/2x/heart-c.png); }
 	.single-post .post-meta p.post-categories { background-image: url(images/icons/2x/folder-g.png); }

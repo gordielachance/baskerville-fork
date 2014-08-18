@@ -214,7 +214,7 @@
 						
 						<div class="post-meta">
 						
-							<p class="post-date"><?php the_time( get_option( 'date_format' ) ); ?></p>
+							<p class="post-date"><i class="fa fa-clock-o"></i> <?php the_time( get_option( 'date_format' ) ); ?></p>
 							
 							<?php if( function_exists('zilla_likes') ) zilla_likes(); ?>
 							
