@@ -1157,11 +1157,6 @@ body.single-post .content.center {
 
 .post-nav a:first-child { margin-top: 0; }
 
-a.post-nav-prev { background-image: url(images/icons/1x/prev-g.png); }
-a.post-nav-prev:hover { background-image: url(images/icons/1x/prev-c.png); }
-a.post-nav-next { background-image: url(images/icons/1x/next-g.png); }
-a.post-nav-next:hover { background-image: url(images/icons/1x/next-c.png); }
-
 
 /* post-author */
 
