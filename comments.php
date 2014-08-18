@@ -80,26 +80,42 @@
 	
 	<?php $comments_args = array(
 	
-		'comment_notes_before' => 
-			'<p class="comment-notes">' . __( 'Your email address will not be published.', 'baskerville' ) . '</p>',
-	
-		'comment_field' => 
-			'<p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="6" required>' . '</textarea></p>',
-		
-		'fields' => apply_filters( 'comment_form_default_fields', array(
-		
-			'author' =>
-				'<p class="comment-form-author">' .
-				'<input id="author" name="author" type="text" placeholder="' . __('Name','baskerville') . '" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" />' . '<label for="author">Author</label> ' . ( $req ? '<span class="required">*</span>' : '' ) . '</p>',
-			
-			'email' =>
-				'<p class="comment-form-email">' . '<input id="email" name="email" type="text" placeholder="' . __('Email','baskerville') . '" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30" /><label for="email">Email</label> ' . ( $req ? '<span class="required">*</span>' : '' ) . '</p>',
-			
-			'url' =>
-			'<p class="comment-form-url">' . '<input id="url" name="url" type="text" placeholder="' . __('Website','baskerville') . '" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /><label for="url">Website</label></p>')
-		),
+            'comment_notes_before' => 
+                    '<p class="comment-notes">' . __( 'Your email address will not be published.', 'baskerville' ) . '</p>',
+
+            'comment_field' => 
+                    '<p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="6" required>' . '</textarea></p>',
+
+            'fields' => apply_filters( 'comment_form_default_fields', 
+
+                array(
+
+                    'author' =>
+                            '<p class="input-group comment-form-author">' .
+                            '<span class="input-group-addon"><i class="fa fa-user fa-fw"></i> </span>' .
+                            '<input class="form-control" id="author" name="author" type="text" placeholder="' . __('Name','baskerville') . '" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" />' . '<label for="author">Author</label> ' . ( $req ? '<span class="required">*</span>' : '' ) . 
+                            '</p>',
+
+                    'email' =>
+                            '<p class="input-group comment-form-email">' . 
+                            '<span class="input-group-addon"><i class="fa fa-envelope"></i> </span>' .
+                            '<input class="form-control" id="email" name="email" type="text" placeholder="' . __('Email','baskerville') . '" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30" /><label for="email">Email</label> ' . ( $req ? '<span class="required">*</span>' : '' ) . 
+                            '</p>',
+
+                    'url' =>
+                    '<p class="input-group comment-form-url">' . 
+                    '<span class="input-group-addon"><i class="fa fa-home"></i> </span>' .
+                    '<input class="form-control" id="url" name="url" type="text" placeholder="' . __('Website','baskerville') . '" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /><label for="url">Website</label> ' . 
+                    '</p>'
+                )
+            ),
 	);
 	
 	comment_form($comments_args);
 	
 	?>
+
+    <div class="input-group margin-bottom-sm">
+<span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+<input class="form-control" type="text" placeholder="Email address">
+</div>
